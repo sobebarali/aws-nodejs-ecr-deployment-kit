@@ -4,8 +4,8 @@ This directory contains the Terraform configuration for setting up two Amazon El
 
 ## Repositories Created
 
-- `uv-nodejs-app-{environment}`: Holds the Node.js application images
-- `uv-nodejs-nginx-{environment}`: Holds the Nginx reverse proxy images
+- `nodejs-app-{environment}`: Holds the Node.js application images
+- `nginx-app-{environment}`: Holds the Nginx reverse proxy images
 
 ## Prerequisites
 
@@ -30,7 +30,7 @@ allowed_aws_account_arns = [
   "arn:aws:iam::ACCOUNT_ID:root"  # Replace with your AWS account ARN
 ]
 tags = {
-  Project     = "uv-nodejs-ecs"
+  Project     = "nodejs-aws-ecr"
   Environment = "dev"
   Terraform   = "true"
 }
